@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" 
+    xmlns="http://java.sun.com/xml/ns/j2ee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+   <welcome-file-list>  
+   <welcome-file>FlightInfo.jsp</welcome-file>  
+  </welcome-file-list>  
+  <servlet>
+    <servlet-name>search</servlet-name>
+    <servlet-class>FlightSearch</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/FlightSearch</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>more</servlet-name>
+    <servlet-class>MoreInfoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>more</servlet-name>
+    <url-pattern>/MoreInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>customer</servlet-name>
+    <servlet-class>CustomerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>customer</servlet-name>
+    <url-pattern>/CustomerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>auction</servlet-name>
+    <servlet-class>AuctionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>auction</servlet-name>
+    <url-pattern>/auction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>LogInServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>LogOutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>empReserve</servlet-name>
+    <servlet-class>EmployeeReservationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>empReserve</servlet-name>
+    <url-pattern>/empReserve</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>cusReserve</servlet-name>
+    <servlet-class>AddReservationPassenger</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>cusReserve</servlet-name>
+    <url-pattern>/AddReservationPassenger</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>empAddPassenger</servlet-name>
+    <servlet-class>AddPassengerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>empAddPassenger</servlet-name>
+    <url-pattern>/empAddPassenger</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>empEditPassenger</servlet-name>
+    <servlet-class>EditPassengerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>empEditPassenger</servlet-name>
+    <url-pattern>/empEditPassenger</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>empDeletePassenger</servlet-name>
+    <servlet-class>DeletePassengerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>empDeletePassenger</servlet-name>
+    <url-pattern>/empDeletePassenger</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>employeeInfo</servlet-name>
+    <servlet-class>EmployeeInfoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>employeeInfo</servlet-name>
+    <url-pattern>/employeeInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Manager</servlet-name>
+    <servlet-class>ManagerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Manager</servlet-name>
+    <url-pattern>/ManagerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ManagerUpdate</servlet-name>
+    <servlet-class>ManagerUpdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ManagerUpdate</servlet-name>
+    <url-pattern>/ManagerUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ManagerEdit</servlet-name>
+    <servlet-class>ManagerEditServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ManagerEdit</servlet-name>
+    <url-pattern>/ManagerEditServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ManagerDelete</servlet-name>
+    <servlet-class>ManagerDeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ManagerDelete</servlet-name>
+    <url-pattern>/ManagerDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>customerMailingList</servlet-name>
+    <servlet-class>CustomerMailingListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>customerMailingList</servlet-name>
+    <url-pattern>/customerMailingList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>flightSuggestions</servlet-name>
+    <servlet-class>FlightSuggestionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>flightSuggestions</servlet-name>
+    <url-pattern>/empFlightSuggestions</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>reservelist</servlet-name>
+    <servlet-class>ReservationListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>reservelist</servlet-name>
+    <url-pattern>/ReservationListServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deletereservelist</servlet-name>
+    <servlet-class>DeleteReservationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>deletereservelist</servlet-name>
+    <url-pattern>/DeleteReservationServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updatec</servlet-name>
+    <servlet-class>UpdateCustomerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>updatec</servlet-name>
+    <url-pattern>/UpdateCustomerServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>
